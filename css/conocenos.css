@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fefefe;
+    color: #271111;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+ul {
+    list-style: none;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+.navegacion{
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+.cimarrones{
+    width: 50px;
+}
+
+.navegacion ul {
+    display: flex;
+
+}
+.navegacion ul li{
+    padding: 10px;
+}
+
+.navegacion ul li a{
+    padding: 2px;
+}
+
+.navegacion ul li a:hover{
+    border-bottom: 2px solid black;
+
+    
+}
+/* NAVEGACION FOTO*/
+.navegacion ul.menu{
+    flex: 1;
+    margin-left: 20px;
+}
+/*PRINCIPAL*/
+hr{
+    margin: 10px 0 10px 0;
+}
+.imgprincipal{
+            color: #DFDBE5;
+            width:  100%;
+            height: 550px;
+            background: url("../img/cima-p-3.jpeg") center center/cover;
+            padding: 50px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            
+}
+.boton{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 5px  10px 5px 5px;
+    background: rgb(57, 130, 228) ;
+    font-size: 13px;
+    border: 1px solid rgb(57, 130, 228) ;
+    color: #fefefe;
+    margin-bottom: 20px;
+   margin-top: 10px;
+   margin-left: 10px;
+   
+}
+
+.boton:hover {
+    opacity: .7;
+}
+.imgprincipal h2,
+.imgprincipal p {
+    margin: 0px 50px 0px 50px;
+    text-align:center ;
+}
+.botones    {
+    display: inline-block;
+    
+}
+
+/*imagenes secundarias*/
+
+.imgsec{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    gap: 40px ;
+    margin-top: 30px;
+
+}
+
+.imgsec img{
+    width: 100%;
+    height: 180 px;
+}
+
+.imgtam{
+    /*width: 535px;
+    height: 338px;*/
+    width: 50%;
+    height: 50%;
+}
+
+.imgsec h3{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.imgsec a{
+    padding: 10px 0px;
+    color: rgb(57, 130, 228);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+.imgsec a:hover{
+    text-decoration: underline;
+}
+
+/* Redes Sociales */
+.social{
+    margin: 50px;
+}
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.links  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.links a{
+    margin: 0 30px;
+    width: 1em;
+    font-size: 70px;
+}
+
+ .links i {
+     font-size: 60px;
+ }
+
+ .links-a-footer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .links-a-footer a{
+     margin: 0 3px;
+ }
+.links-a-footer li{
+
+    font-size: 15px;
+}
+ /* Footer*/
+
+ .links-footer{
+     background: #111111;
+     color: #fefefe;
+     font-size: 12px;
+     padding: 35px 0 ;
+ }
+
+ .contenedor-footer{
+     display: grid;
+     grid-template-columns:  repeat(3, 1fr);
+     gap: 10px;
+     align-items: flex-start;
+     justify-content: center;
+ }
+ .contenedor-footer ul{
+     margin: 0 auto;
+ }
+ .contenedor-footer a{
+     color: #fefefe;
+     
+ }
+ .contenedor-footer ul li{
+     line-height: 2.8;
+ }
+
+ .footer{
+     background: #292929;
+     font-size: 12px;
+     padding: 20px 0;
+     text-align: left;
+     padding-bottom: 20px;
+     padding-left: 30px;
+ }
+ .contenedor-footer a:hover {
+
+    text-decoration:underline;
+
+ }
+
+ .footer h3{
+     color: #fefefe;
+     font-weight: 300;
+ }
+
+ .boton-menu{
+    position: absolute;
+    cursor: pointer;
+    cursor: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+}
+ @media (max-width: 700px){     
+
+    /*Tamaño de las imagenes*/
+
+    .imgsec{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+       /*Tamaño de la navegacion*/
+    .navegacion ul.menu{
+
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: #DFDBE5;
+       height: 100%;
+       transform: translateX(-400px);
+       transition: transform .5s ease-in-out;
+       padding: 30px;
+       opacity: .7;
+    }
+
+    .navegacion ul.menu.mostrar{
+        transform: translateX(-20px);
+
+    }
+    .navegacion ul.menu li{
+
+       
+       padding: 30px;
+       opacity: .7;
+       font-size: 14px;
+    }
+    
+
+   }
