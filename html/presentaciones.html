@@ -9,102 +9,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Cimarrones</title>
-    <!--navegacion-->
+        <!--navegacion-->
 </head>
 <body>
     <div class="boton-menu"><i class="fas fa-bars"></i></div>
     <div class="contenedor">
         <nav class="navegacion">
             <img class="cimarrones" src="../img/Logo-cimarrones.jpg" alt="">
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./conocenos.html">Conocenos</a></li>
-                <li><a href="#">Presentaciones</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-            </ul>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./conocenos.html">Conocenos</a></li>
+                    <li><a href="#">Presentaciones</a></li>
+                    <li><a href="./contactos.html">Contactos</a></li>
+                </ul>
         </nav>
-        <hr> <br> <br>
-        <div class="calendar">
-        <h1 class="title">Calendario de Eventos</h1>
+        <hr><br><br>
 
-    <div class="calendar__info">
-        <div class="calendar__prev" id="prev-month">&#9664;</div>
-        <div class="calendar__month" id="month"></div>
-        <div class="calendar__year" id="year"></div>
-        <div class="calendar__next" id="next-month">&#9654;</div>
-    </div>
+        <!--Calendario-->
 
-    <div class="calendar__week">
-        <div class="calendar__day calendar__item">Mon</div>
-        <div class="calendar__day calendar__item">Tue</div>
-        <div class="calendar__day calendar__item">Wed</div>
-        <div class="calendar__day calendar__item">Thu</div>
-        <div class="calendar__day calendar__item">Fri</div>
-        <div class="calendar__day calendar__item">Sat</div>
-        <div class="calendar__day calendar__item">Sun</div>
-    </div>
+    <div class="calendar">
+            <h1 class="title">Calendario de Eventos</h1>
 
-    <div class="calendar__dates" id="dates"></div>
-</div> <br><br>
-<hr>
-<script src="../js/presentaciones.js"></script>
+            <div class="calendar__info">
+                <div class="calendar__prev" id="prev-month">&#9664;</div>
+                <div class="calendar__month" id="month"></div>
+                <div class="calendar__year" id="year"></div>
+                <div class="calendar__next" id="next-month">&#9654;</div>
+            </div>
 
-            <!--Fechas de presentacion-->
-
-<div class="presentaciones-container">
-    <h1>Próximos Eventos</h1>
-    <ul class="lista-presentaciones">
-        <div class="direcciones">
-
-            <li class="evento"><span class="fa-solid fa-guitar"></span><b>"Carnaval Palenque Salinas 2022"</b></li>
-                <p class="direccion">
-                    <span class="fa-regular fa-calendar"></span>  17/03/2022 <br>
-                    <span class="fa-solid fa-route"></span><i>Parroquia de Salinas, complejo turístico - 'Bombodromo Palenque'</i> <br>
-                    <span class="fa-regular fa-clock"></span> 17:00
-                </p>
+        <div class="calendar__week">
+            <div class="calendar__day calendar__item">Mon</div>
+            <div class="calendar__day calendar__item">Tue</div>
+            <div class="calendar__day calendar__item">Wed</div>
+            <div class="calendar__day calendar__item">Thu</div>
+            <div class="calendar__day calendar__item">Fri</div>
+            <div class="calendar__day calendar__item">Sat</div>
+            <div class="calendar__day calendar__item">Sun</div>
         </div>
-        <div class="direcciones">
 
-            <li class="evento"><span class="fa-solid fa-guitar"></span><b>Teatro capitol Quito</b></li>
-            <p class="direccion">
-               <span class="fa-regular fa-calendar"></span>  17/03/2022 <br>
-               <span class="fa-solid fa-route"></span><i> Ciudad de Quito, calle Gran Colombia y Julio Castro</i> <br>
-               <span class="fa-regular fa-clock"></span> 20:30
-            </p>
-        </div>
-        <div class="direcciones">
+        <div class="calendar__dates" id="dates"></div>
+    </div><br><br>
 
-            <li class="evento"><span class="fa-solid fa-guitar"></span><b>Canchas Don Rafa</b></li>
-            <p class="direccion">
-                <span class="fa-regular fa-calendar"></span>  17/03/2022 <br>
-                <span class="fa-solid fa-route"></span><i>Yahuarcocha, Autopista km 5, pasando el pueblo</i><br>
-                <span class="fa-regular fa-clock"></span> 18:30
-            </p>
-        </div>
+    <hr>
+
+    <script src="../js/presentaciones.js"></script>
+
+        <!--Fechas de presentacion-->
+
+    <div class="presentaciones-container">
+        <h1>Próximos Eventos</h1>
+        <ul class="lista-presentaciones">
+            <div class="direcciones">
+
+                <li class="evento"><span class="fa-solid fa-guitar"></span><b>"Carnaval Palenque Salinas 2022"</b>
+                </li>
+
+                    <p class="direccion">
+
+                        <span class="fa-regular fa-calendar"></span>17/03/2022 <br>
+                        <span class="fa-solid fa-route"></span><i>Parroquia de  Salinas, complejo turístico - 'Bombodromo Palenque'</i> <br>
+                        <span class="fa-regular fa-clock"></span> 17:00
+
+                    </p>
+            </div>
+
+            <div class="direcciones">
+
+                <li class="evento"><span class="fa-solid fa-guitar"></span><b>Teatro capitol Quito</b>
+                </li>
+
+                    <p class="direccion">
+
+                        <span class="fa-regular fa-calendar"></span>17/03/2022 <br>
+                        <span class="fa-solid fa-route"></span><i> Ciudad de Quito, calle           Gran Colombia y Julio Castro</i><br>
+                        <span class="fa-regular fa-clock"></span> 20:30
+
+                    </p>
+            </div>
+
+            <div class="direcciones">
+
+                <li class="evento"><span class="fa-solid fa-guitar"></span><b>Canchas Don Rafa</b>
+                </li>
+                    <p class="direccion">
+
+                        <span class="fa-regular fa-calendar"></span>17/03/2022 <br>
+                        <span class="fa-solid fa-route"></span><i>Yahuarcocha, Autopista        km 5, pasando el pueblo</i><br>
+                        <span class="fa-regular fa-clock"></span> 18:30
+
+                    </p>
+            </div>
         
-        <div id="contenedor-evento">
-            <style>
-                #contenedor-evento{
-                    display: none;
-                }
-            </style>
-
+            <div id="contenedor-evento">
+            <!--El evento permanecerá oculto hasta que se llene los datos del mismo-->
+                <style>
+                    #contenedor-evento{
+                        display: none;
+                    }
+                </style>
+            <h3>Tu evento: </h3>        
             <div class="direcciones">
                 <li class="evento" >
                     <span class="fa-solid fa-guitar"></span>
                     <b id="nombreEvento"></b>
-                </p></li>
-                <p class="direccion">
+                </li>
+
+                    <p class="direccion">
                     
-                    <span class="fa-regular fa-calendar"></span> <small id="fechaEvento"></small><br>
-                    <span class="fa-solid fa-route"></span><i><small id="direccionEvento"></small></i><br>
-                    <span class="fa-regular fa-clock"></span> <small id="horaEvento"></small> 
-                </p>
+                        <span class="fa-regular fa-calendar"></span> <small id="fechaEvento"></small><br>
+                        <span class="fa-solid fa-route"></span><i><small id="direccionEvento"></small></i><br>
+                        <span class="fa-regular fa-clock"></span> <small    id="horaEvento"></small> 
+
+                    </p>
             </div>
 
-        </div>
-    </ul>
-</div>
+            </div>
+        </ul>
+    </div>
 
 <hr>
 
@@ -122,14 +143,22 @@
                 <button>Enviar</button>
                
             </form>
-        </div> <br>
+        </div><br>
+
+        <!--Div para mostrar el evento-->
+
         <div class="botonAlerta">
-            <h3>¡Has click en el boton de abajo para mostrar tu evento en nuestro calendario!</h3>
-                <button id="botonjs">Muestra tu evento</button> <br>
-        </div> <br>
+            
+            <h3>
+                ¡Has click en el boton para mostrar tu evento en nuestra lista de eventos!
+            </h3>
+                <button id="botonjs">Muestra tu evento</button><br>
+        </div><br>
+
         <script src="../js/eventos.js"></script>
         
         <hr> 
+
         <!--Redes Sociales-->
         
         <section class="social">
@@ -143,6 +172,8 @@
         </section>
 
     </div>
+
+     <!--Footer-->
 
     <div class="links-footer">
         <div class="contenedor-footer">
