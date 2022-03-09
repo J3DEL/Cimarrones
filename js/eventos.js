@@ -8,11 +8,11 @@ function evento(){
     
     // Repetir hasta que la fecha es correcta
     var d = 0; var m = 0; var a = 0;
-    while (a < 2022 || m > 12  && m <=2  || d > 31) {
+    while (a < 2022 || m > 12  && m <= 2  || d > 31) {
 
         var fechaEv = prompt('Ingrese la fecha (formato: dd/mm/aaaa)');
-    
-         d = Number( fechaEv.substring(0,2));
+                    //nombre cadena
+         d = Number( fechaEv.substring(0,2)); //Se define como numero, se pone el nombre de la subcadena y los espacios en los que se va a trabajar
          m = Number( fechaEv.substring(3,5));
          a = Number( fechaEv.substring(6,10));
         
@@ -32,7 +32,7 @@ function evento(){
          else{
 
         }
-        
+        //Para los meses que tienen 30 - 31 dias 
         switch (m){
     
             // Meses que tienen 31 días
